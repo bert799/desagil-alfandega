@@ -22,4 +22,10 @@ public class Item {
 	public double getRate() {
 		return this.rate;
 	}
+	
+	public double getTarifa() { 
+		// Mesmo em itens sem tarifa, a alfândega cobra
+		// uma taxa de 1% Por que? Porque eles podem.
+		return 0.01;
+	}
 }
